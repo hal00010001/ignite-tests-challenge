@@ -40,6 +40,11 @@ export class AuthenticateUserUseCase {
       expiresIn,
     });
 
+    // const token = sign({}, "senhasupersecreta123", {
+    //   subject: user.id,
+    //   expiresIn: "1d",
+    // });
+
     return {
       user: {
         id: user.id,
